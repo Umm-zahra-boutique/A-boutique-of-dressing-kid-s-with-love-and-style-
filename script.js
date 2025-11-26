@@ -1,66 +1,38 @@
-// Simple carousel for testimonials on Home page
-(function () {
-  const container = document.querySelector('[data-carousel]');
-  if (!container) return;
-  const slides = Array.from(container.querySelectorAll('.slide'));
-  let i = 0;
-
-  function show(index) {
-    slides.forEach((s, idx) => s.style.display = idx === index ? 'block' : 'none');
+// Mobile nav toggle
+(function(){
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('nav');
+  if(toggle && nav){
+    toggle.addEventListener('click', ()=> nav.classList.toggle('open'));
   }
-  show(i);
-
-  container.querySelector('[data-prev]')?.addEventListener('click', () => {
-    i = (i - 1 + slides.length) % slides.length;
-    show(i);
-  });
-  container.querySelector('[data-next]')?.addEventListener('click', () => {
-    i = (i + 1) % slides.length;
-    show(i);
-  });
+  const toggleShop = document.getElementById('navToggleShop');
+  const navShop = document.getElementById('navShop');
+  if(toggleShop && navShop){
+    toggleShop.addEventListener('click', ()=> navShop.classList.toggle('open'));
+  }
 })();
 
-// Shop filters (very basic demo)
-(function () {
-  const grid = document.querySelector('[data-products]');
-  if (!grid) return;
-
-  const ageSelect = document.querySelector('#filter-age');
-  const genderSelect = document.querySelector('#filter-gender');
-  const priceSelect = document.querySelector('#filter-price');
-  const occasionSelect = document.querySelector('#filter-occasion');
-
-  function applyFilters() {
-    const age = ageSelect.value;
-    const gender = genderSelect.value;
-    const price = priceSelect.value;
-    const occasion = occasionSelect.value;
-
-    grid.querySelectorAll('.card').forEach(card => {
-      const okAge = age === 'all' || card.dataset.age === age;
-      const okGender = gender === 'all' || card.dataset.gender === gender;
-      const okOccasion = occasion === 'all' || card.dataset.occasion === occasion;
-      const priceVal = Number(card.dataset.price || 0);
-      let okPrice = true;
-      if (price === 'low') okPrice = priceVal < 10000;
-      if (price === 'mid') okPrice = priceVal >= 10000 && priceVal <= 25000;
-      if (price === 'high') okPrice = priceVal > 25000;
-
-      card.style.display = (okAge && okGender && okOccasion && okPrice) ? '' : 'none';
+// Hide bottom bar while scrolling down (small UX improvement)
+(function(){
+  const bar = document.querySelector('.mobile-bottom-bar');
+  if(!bar) return;
+  let last = window.scrollY;
+  let ticking = false;
+  window.addEventListener('scroll', ()=> {
+    if(ticking) return;
+    ticking = true;
+    requestAnimationFrame(()=> {
+      const now = window.scrollY;
+      if(now > last && now > 60){
+        // scrolling down
+        bar.style.transform = 'translateY(80px)';
+        bar.style.opacity = '0';
+      } else {
+        bar.style.transform = 'translateY(0)';
+        bar.style.opacity = '1';
+      }
+      last = now;
+      ticking = false;
     });
-  }
-
-  [ageSelect, genderSelect, priceSelect, occasionSelect].forEach(el => el.addEventListener('change', applyFilters));
-  applyFilters();
-})();
-
-// WhatsApp inquiry buttons
-(function () {
-  document.querySelectorAll('[data-whatsapp]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const msg = encodeURIComponent(btn.dataset.msg || 'Hello Umm Zahra Boutique!');
-      const phone = '2349017254986'; // WhatsApp number
-      window.open(`https://api.whatsapp.com/send?phone=${phone}&text=${msg}`, '_blank');
-    });
-  });
+  }, {passive:true});
 })();
