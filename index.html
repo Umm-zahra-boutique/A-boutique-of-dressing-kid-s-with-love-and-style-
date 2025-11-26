@@ -1,57 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umm Zahra Boutique – Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Umm Zahra Boutique — Kids Fashion in Katsina</title>
+  <meta name="description" content="Umm Zahra Boutique — Modest & stylish kids clothing in Katsina. Outfits for newborn-16yrs, shoes & accessories. Order via WhatsApp." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Umm Zahra Boutique</a>
+      <button class="nav-toggle" aria-label="Open navigation" id="navToggle">☰</button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="order-delivery.html">Order & Delivery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Navigation -->
-    <header class="header">
-        <h1 class="logo">Umm Zahra Boutique</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="shop.html">Shop</a>
-            <a href="lookbook.html">Lookbook</a>
-            <a href="order-delivery.html">Order & Delivery</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
+  <main>
     <section class="hero">
-        <h2>Elegant Kids Fashion</h2>
-        <p>Modest, Beautiful, and Affordable clothing for your little ones.</p>
-        <a href="shop.html" class="btn">Shop Now</a>
-    </section>
-
-    <!-- Highlights -->
-    <section class="section">
-        <h2>Why Choose Us?</h2>
-        <div class="features">
-            <div class="feature-box">
-                <h3>High Quality</h3>
-                <p>We select the best fabrics suitable for kids.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Affordable</h3>
-                <p>Beautiful clothing at pocket-friendly prices.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Nationwide Delivery</h3>
-                <p>Fast and reliable delivery to all Nigerian States.</p>
-            </div>
+      <div class="wrap hero-inner">
+        <h1>Modest • Cute • Comfortable</h1>
+        <p class="lead">Children's clothing and accessories — outfits for newborn to 16 years. Based in GRA, Katsina.</p>
+        <div class="hero-cta">
+          <a class="btn" href="shop.html">Shop Now</a>
+          <a class="btn outline" href="lookbook.html">See Lookbook</a>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2025 Umm Zahra Boutique</p>
-    </footer>
+    <section class="wrap features">
+      <article class="feature">
+        <h3>High quality fabrics</h3>
+        <p>Soft, durable and kid-friendly materials.</p>
+      </article>
+      <article class="feature">
+        <h3>Nationwide delivery</h3>
+        <p>We ship across Nigeria — reliable & tracked.</p>
+      </article>
+      <article class="feature">
+        <h3>Easy ordering</h3>
+        <p>Order via WhatsApp or Linktree quickly.</p>
+      </article>
+    </section>
 
-<script src="script.js"></script>
+    <section class="wrap preview-products">
+      <h2>Featured Items</h2>
+      <div class="product-grid">
+        <!-- Product cards — replace with real images & data -->
+        <article class="product">
+          <div class="product-thumb" aria-hidden="true"></div>
+          <h4>Classic Dress</h4>
+          <p class="price">₦2,800</p>
+          <a class="btn small" href="contact.html">Order</a>
+        </article>
+        <article class="product">
+          <div class="product-thumb" aria-hidden="true"></div>
+          <h4>School Outfit</h4>
+          <p class="price">₦1,900</p>
+          <a class="btn small" href="contact.html">Order</a>
+        </article>
+        <article class="product">
+          <div class="product-thumb" aria-hidden="true"></div>
+          <h4>Baby Set</h4>
+          <p class="price">₦3,200</p>
+          <a class="btn small" href="contact.html">Order</a>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:14px;">
+        <a class="btn" href="shop.html">View All</a>
+      </div>
+    </section>
+
+    <section class="wrap instagram-cta">
+      <h2>Follow us on Instagram</h2>
+      <p class="muted">@umm_zahra_boutique — latest styles, customer photos & updates</p>
+      <a class="btn outline" href="https://www.instagram.com/umm_zahra_boutique" target="_blank" rel="noopener">Open Instagram</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-left">
+        <strong>Umm Zahra Boutique</strong><br>
+        GRA Katsina — Nationwide delivery
+      </div>
+      <div class="footer-right">
+        <a href="links.html" class="link">Quick Links</a> · <a href="contact.html" class="link">Contact</a>
+      </div>
+    </div>
+    <small class="copyright">© 2025 Umm Zahra Boutique</small>
+  </footer>
+
+  <a class="whatsapp-fab" href="https://api.whatsapp.com/send?phone=2349017254986&text=Hello%20Umm%20Zahra%20Boutique!" target="_blank" aria-label="Chat on WhatsApp">💬</a>
+
+  <script src="script.js"></script>
 </body>
-      </html>
+          </html>
