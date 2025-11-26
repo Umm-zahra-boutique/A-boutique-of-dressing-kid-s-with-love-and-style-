@@ -1,180 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Shop — Umm Zahra Boutique</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Shop newborn to teens, shoes and accessories. Filter by age, gender, price, occasion." />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop – Umm Zahra Boutique</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container inner">
-      <div class="brand"><div class="logo"></div><div class="brand-name">UMM ZAHRA</div></div>
-      <nav class="nav">
+
+<header class="header">
+    <h1 class="logo">Umm Zahra Boutique</h1>
+    <nav>
         <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
+        <a class="active" href="#">Shop</a>
         <a href="lookbook.html">Lookbook</a>
         <a href="order-delivery.html">Order & Delivery</a>
         <a href="about.html">About</a>
-        <a href="contact.html" class="btn">Contact</a>
-      </nav>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h3>Product Name</h3>
+            <p>₦ Price</p>
+            <a class="btn" href="contact.html">Order</a>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img"></div>
+            <h3>Product Name</h3>
+            <p>₦ Price</p>
+            <a class="btn" href="contact.html">Order</a>
+        </div>
+
+        <!-- Add more as needed -->
+
     </div>
-  </header>
+</section>
 
-  <main class="container">
-    <section class="section">
-      <h2>Shop</h2>
-      <div class="filters">
-        <select id="filter-age" class="select">
-          <option value="all">Age group</option>
-          <option value="newborn">Newborn (0–12 months)</option>
-          <option value="toddlers">Toddlers (1–4 years)</option>
-          <option value="kids">Kids (5–10 years)</option>
-          <option value="teens">Teens (11–16 years)</option>
-        </select>
-        <select id="filter-gender" class="select">
-          <option value="all">Gender</option>
-          <option value="girls">Girls</option>
-          <option value="boys">Boys</option>
-          <option value="unisex">Unisex</option>
-        </select>
-        <select id="filter-price" class="select">
-          <option value="all">Price</option>
-          <option value="low">Below 10,000</option>
-          <option value="mid">10,000–25,000</option>
-          <option value="high">Above 25,000</option>
-        </select>
-        <select id="filter-occasion" class="select">
-          <option value="all">Occasion</option>
-          <option value="casual">Casual</option>
-          <option value="school">School</option>
-          <option value="party">Party</option>
-          <option value="religious">Religious</option>
-        </select>
-      </div>
+<footer class="footer">
+    <p>© 2025 Umm Zahra Boutique</p>
+</footer>
 
-      <div class="grid cols-4" data-products>
-        <!-- Example product cards — replace with real images and prices -->
-        <div class="card" data-age="newborn" data-gender="unisex" data-occasion="casual" data-price="8500">
-          <div class="thumb"></div>
-          <div class="body">
-            <div class="title">Soft Newborn Onesie</div>
-            <div class="meta">0–12 months • Unisex</div>
-            <div class="price">₦8,500</div>
-            <div class="row">
-              <button class="btn primary" data-whatsapp data-msg="Hello! I'm interested in: Soft Newborn Onesie">WhatsApp inquiry</button>
-              <button class="btn">Add to cart</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" data-age="toddlers" data-gender="girls" data-occasion="party" data-price="18000">
-          <div class="thumb"></div>
-          <div class="body">
-            <div class="title">Toddler Party Dress</div>
-            <div class="meta">1–4 years • Girls</div>
-            <div class="price">₦18,000</div>
-            <div class="row">
-              <button class="btn primary" data-whatsapp data-msg="Hello! I'm interested in: Toddler Party Dress">WhatsApp inquiry</button>
-              <button class="btn">Add to cart</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" data-age="kids" data-gender="boys" data-occasion="school" data-price="12000">
-          <div class="thumb"></div>
-          <div class="body">
-            <div class="title">Boys School Uniform Set</div>
-            <div class="meta">5–10 years • Boys</div>
-            <div class="price">₦12,000</div>
-            <div class="row">
-              <button class="btn primary" data-whatsapp data-msg="Hello! I'm interested in: Boys School Uniform Set">WhatsApp inquiry</button>
-              <button class="btn">Add to cart</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" data-age="teens" data-gender="girls" data-occasion="casual" data-price="26000">
-          <div class="thumb"></div>
-          <div class="body">
-            <div class="title">Teen Denim Jacket</div>
-            <div class="meta">11–16 years • Girls</div>
-            <div class="price">₦26,000</div>
-            <div class="row">
-              <button class="btn primary" data-whatsapp data-msg="Hello! I'm interested in: Teen Denim Jacket">WhatsApp inquiry</button>
-              <button class="btn">Add to cart</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" data-age="kids" data-gender="unisex" data-occasion="school" data-price="9500">
-          <div class="thumb"></div>
-          <div class="body">
-            <div class="title">Kids Backpack</div>
-            <div class="meta">5–10 years • Unisex</div>
-            <div class="price">₦9,500</div>
-            <div class="row">
-              <button class="btn primary" data-whatsapp data-msg="Hello! I'm interested in: Kids Backpack">WhatsApp inquiry</button>
-              <button class="btn">Add to cart</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" data-age="toddlers" data-gender="boys" data-occasion="casual" data-price="14000">
-          <div class="thumb"></div>
-          <div class="body">
-            <div class="title">Toddler Sneakers</div>
-            <div class="meta">1–4 years • Boys</div>
-            <div class="price">₦14,000</div>
-            <div class="row">
-              <button class="btn primary" data-whatsapp data-msg="Hello! I'm interested in: Toddler Sneakers">WhatsApp inquiry</button>
-              <button class="btn">Add to cart</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" data-age="teens" data-gender="unisex" data-occasion="party" data-price="30000">
-          <div class="thumb"></div>
-          <div class="body">
-            <div class="title">Teen Formal Shoes</div>
-            <div class="meta">11–16 years • Unisex</div>
-            <div class="price">₦30,000</div>
-            <div class="row">
-              <button class="btn primary" data-whatsapp data-msg="Hello! I'm interested in: Teen Formal Shoes">WhatsApp inquiry</button>
-              <button class="btn">Add to cart</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" data-age="newborn" data-gender="girls" data-occasion="religious" data-price="11000">
-          <div class="thumb"></div>
-          <div class="body">
-            <div class="title">Newborn Modest Set</div>
-            <div class="meta">0–12 months • Girls</div>
-            <div class="price">₦11,000</div>
-            <div class="row">
-              <button class="btn primary" data-whatsapp data-msg="Hello! I'm interested in: Newborn Modest Set">WhatsApp inquiry</button>
-              <button class="btn">Add to cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr class="soft" />
-      <p class="small">Tip: Replace placeholders with real product photos and set accurate prices. The WhatsApp button will open a chat with your shop number.</p>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container cols">
-      <div><h4>Umm Zahra Boutique</h4><p class="small">New arrivals weekly • No refund policy</p></div>
-      <div><h4>Categories</h4><ul><li>Newborn</li><li>Toddlers</li><li>Kids</li><li>Teens</li><li>Shoes & Accessories</li></ul></div>
-      <div><h4>Contact</h4><ul><li>Phone: +2347067204032</li><li><a href="https://api.whatsapp.com/send?phone=2349017254986" target="_blank" rel="noopener">WhatsApp us</a></li></ul></div>
-    </div>
-    <div class="container legal">© 2025 Umm Zahra Boutique</div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
