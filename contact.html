@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Contact — Umm Zahra Boutique</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Contact Umm Zahra Boutique: phone, WhatsApp, email, and location." />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Umm Zahra Boutique</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container inner">
-      <div class="brand"><div class="logo"></div><div class="brand-name">UMM ZAHRA</div></div>
-      <nav class="nav">
+
+<header class="header">
+    <h1 class="logo">Umm Zahra Boutique</h1>
+    <nav>
         <a href="index.html">Home</a>
         <a href="shop.html">Shop</a>
         <a href="lookbook.html">Lookbook</a>
         <a href="order-delivery.html">Order & Delivery</a>
         <a href="about.html">About</a>
-        <a href="contact.html" class="btn">Contact</a>
-      </nav>
+        <a class="active" href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Get in Touch</h2>
+
+    <p><strong>Phone:</strong> +234 706 720 4032</p>
+
+    <p><strong>WhatsApp:</strong> 
+        <a href="https://api.whatsapp.com/send?phone=2349017254986" target="_blank" rel="noopener">
+            +234 901 725 4986
+        </a>
+    </p>
+
+    <p><strong>Email:</strong> 
+        <a href="mailto:rabeeatf@gmail.com">rabeeatf@gmail.com</a>
+    </p>
+
+    <p><strong>Location:</strong> GRA Katsina, Katsina State</p>
+
+    <div class="contact-buttons">
+        <a class="btn" href="https://api.whatsapp.com/send?phone=2349017254986&text=Hello%20Umm%20Zahra%20Boutique!" target="_blank" rel="noopener">
+            WhatsApp Us
+        </a>
+
+        <a class="btn" href="https://www.instagram.com/umm_zahra_boutique" target="_blank" rel="noopener">
+            Instagram
+        </a>
+
+        <a class="btn" href="https://linktr.ee/ummzahra_boutique" target="_blank" rel="noopener">
+            Linktree
+        </a>
     </div>
-  </header>
+</section>
 
-  <main class="container">
-    <section class="section">
-      <h2>Get in touch</h2>
-      <p><strong>Phone:</strong> +2347067204032</p>
-      <p><strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=2349017254986" target="_blank" rel="noopener">+234 901 725 4986</a></p>
-      <p><strong>Email:</strong> <a href="mailto:rabeeatf@gmail.com">rabeeatf@gmail.com</a></p>
-      <p><strong>Location:</strong> GRA Katsina, Katsina State</p>
-      <div class="row" style="margin-top:10px;">
-        <a class="btn primary" href="https://api.whatsapp.com/send?phone=2349017254986&text=Hello%20Umm%20Zahra%20Boutique!" target="_blank" rel="noopener">WhatsApp us</a>
-        <a class="btn" href="https://www.instagram.com/umm_zahra_boutique" target="_blank" rel="noopener">Instagram</a>
-        <a class="btn" href="https://linktr.ee/ummzahra_boutique" target="_blank" rel="noopener">Linktree</a>
-      </div>
-    </section>
+<section class="section">
+    <h2>Send a Message</h2>
 
-    <section class="section">
-      <h2>Send a message</h2>
-      <form class="card" style="padding:14px;" action="mailto:rabeeatf@gmail.com" method="post" enctype="text/plain">
-        <div style="display:grid; gap:10px;">
-          <input class="input" type="text" name="name" placeholder="Your name" required />
-          <input class="input" type="email" name="email" placeholder="Your email" required />
-          <textarea class="input" name="message" placeholder="Your message" rows="5" required></textarea>
-        </div>
-        <div class="row" style="margin-top:10px;">
-          <button class="btn primary" type="submit">Send</button>
-        </div>
-      </form>
-      <p class="small">For fastest response, use WhatsApp.</p>
-    </section>
-  </main>
+    <form class="card message-form" action="mailto:rabeeatf@gmail.com" method="post" enctype="text/plain">
+        <label>Your Name</label>
+        <input type="text" name="name" required>
 
-  <footer class="footer">
-    <div class="container legal">© 2025 Umm Zahra Boutique</div>
-  </footer>
+        <label>Your Email</label>
+        <input type="email" name="email" required>
 
-  <script src="script.js"></script>
+        <label>Your Message</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button class="btn" type="submit">Send</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <p>© 2025 Umm Zahra Boutique</p>
+</footer>
+
 </body>
-</html>
+  </html>
