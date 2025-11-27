@@ -1,127 +1,119 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Umm Zahra Boutique</title>
+  <meta charset="UTF-8" />
+  <title>Umm Zahra Boutique — Kids Clothing in Katsina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #fdf7ff;
-      color: #333;
-    }/* Header */
-header {
-  background: #ff4fb0;
-  color: #fff;
-  padding: 18px;
-  text-align: center;
-  font-size: 26px;
-  font-weight: 900;
-  letter-spacing: 1px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav {
-  text-align: center;
-  background: #ffe3f2;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-nav a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: #b80066;
-}
-
-/* Sections */
-.section {
-  padding: 22px;
-  background: #ffffff;
-  margin: 15px;
-  border-radius: 14px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-}
-
-/* CTA Floating Button */
-.floating-cta {
-  position: fixed;
-  bottom: 85px;
-  right: 18px;
-  background: #25D366;
-  color: white;
-  padding: 16px 22px;
-  border-radius: 50px;
-  font-size: 18px;
-  font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  text-decoration: none;
-  z-index: 9999;
-}
-
-/* Bottom Floating Menu */
-.mobile-bottom-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  border-top: 1px solid #ddd;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-  box-shadow: 0 -3px 10px rgba(0,0,0,0.15);
-}
-
-.mobile-bottom-bar a {
-  text-align: center;
-  color: #444;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.mobile-bottom-bar img {
-  width: 26px;
-  height: 26px;
-  display: block;
-  margin: 0 auto 4px;
-}
-
-iframe {
-  width: 100%;
-  height: 260px;
-  border: none;
-  border-radius: 10px;
-}
-
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: sans-serif; background: #fff; color: #333; }
+    header, footer { background: #ffe6f0; padding: 1em; text-align: center; }
+    nav a { margin: 0 0.5em; text-decoration: none; color: #d63384; font-weight: bold; }
+    .hero { padding: 2em 1em; text-align: center; background: #fff0f6; }
+    .hero h1 { margin: 0.5em 0; font-size: 1.8em; color: #d63384; }
+    .section { padding: 1.5em 1em; }
+    .section h2 { font-size: 1.4em; margin-bottom: 0.5em; color: #d63384; }
+    .card { background: #fff; border: 1px solid #f0c0d0; border-radius: 10px; padding: 1em; margin-bottom: 1em; }
+    .btn { display: inline-block; padding: 0.6em 1em; margin: 0.5em 0; background: #d63384; color: #fff; border: none; border-radius: 20px; text-decoration: none; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 1em; }
+    input, textarea { width: 100%; padding: 0.8em; margin: 0.5em 0; border: 1px solid #ccc; border-radius: 10px; }
+    iframe { border-radius: 10px; }
+    @media(min-width: 600px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .bottom-nav {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: #ffe6f0; padding: 0.5em;
+      display: flex; justify-content: space-around;
+      font-size: 1.4em;
+    }
+    .bottom-nav a { color: #d63384; text-decoration: none; }
   </style>
 </head>
-<body><header>UMM ZAHRA BOUTIQUE ☰</header><nav>
-  <a href="#home">Home</a>
-  <a href="#shop">Shop</a>
-  <a href="#lookbook">Lookbook</a>
-  <a href="#order">Order & Delivery</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-</nav><!-- Contact Section --><section class="section" id="contact">
+<body>
+
+<header>
+  <h1>UMM ZAHRA BOUTIQUE</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#order">Order</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Fashion for Little Stars</h1>
+  <p>Newborn to Teen • Back to School • Shoes & Accessories</p>
+  <a class="btn" href="#shop">Shop Now</a>
+  <a class="btn" href="https://api.whatsapp.com/send?phone=2349017254986">WhatsApp</a>
+</section>
+
+<section id="shop" class="section">
+  <h2>Shop by Category</h2>
+  <div class="grid">
+    <div class="card"><strong>Newborn (0–12 months)</strong><p>Soft onesies, blankets</p></div>
+    <div class="card"><strong>Toddlers (1–4 yrs)</strong><p>Playwear, shoes</p></div>
+    <div class="card"><strong>Kids (5–10 yrs)</strong><p>School uniforms, backpacks</p></div>
+    <div class="card"><strong>Teens (11–16 yrs)</strong><p>Modest fashion, accessories</p></div>
+  </div>
+</section>
+
+<section id="lookbook" class="section">
+  <h2>Lookbook</h2>
+  <div class="grid">
+    <div class="card"><strong>Dresses We Love</strong><p>Elegant and comfy styles</p></div>
+    <div class="card"><strong>Back to School Looks</strong><p>Uniforms, shoes, bags</p></div>
+    <div class="card"><strong>NBC Tradefair Highlights</strong><p>Customer favorites</p></div>
+  </div>
+</section>
+
+<section id="order" class="section">
+  <h2>Order & Delivery</h2>
+  <ul>
+    <li>Order via WhatsApp or Instagram DM</li>
+    <li>Payment: Bank transfer or mobile money</li>
+    <li>Nationwide delivery via courier</li>
+  </ul>
+</section>
+
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>Umm Zahra Boutique started in Katsina to bring stylish, modest, and affordable kidswear to families across Nigeria. We serve newborns to teens with love and care.</p>
+</section>
+
+<section id="contact" class="section">
   <h2>Contact Details</h2>
   <p><strong>Call:</strong> 08036769094</p>
-  <p><strong>Email:</strong> rabeeatf@gmail.com</p>
-  <p><strong>WhatsApp:</strong> +234 901 725 4986</p>
-  <p><strong>Location:</strong> GRA Katsina, Katsina State</p>  <h3>Google Map</h3>
-  <iframe 
-    src="https://www.google.com/maps?q=GRA%20Katsina&output=embed" 
-    allowfullscreen>
-  </iframe>
-</section><!-- Floating CTA --><a class="floating-cta" href="https://api.whatsapp.com/send?phone=2349017254986&text=Hello!%20I%20want%20to%20order%20this%20product:" target="_blank">
-  Order Now
-</a><!-- Bottom Mobile Bar --><div class="mobile-bottom-bar">
-  <a href="#home"><img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png">Home</a>
-  <a href="#shop"><img src="https://cdn-icons-png.flaticon.com/512/711/711191.png">Shop</a>
-  <a href="https://api.whatsapp.com/send?phone=2349017254986" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">WhatsApp</a>
-  <a href="#about"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828465.png">About</a>
-</div></body>
+  <p><strong>Email:</strong> <a href="mailto:rabeeatf@gmail.com">rabeeatf@gmail.com</a></p>
+  <p><strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=2349017254986">+234 901 725 4986</a></p>
+  <p><strong>Location:</strong> GRA Katsina, Katsina State</p>
+  <div style="margin-top:1em;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.123456789!2d7.603456!3d12.990123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11b123456789abcd%3A0xabcdef123456789!2sGRA%20Katsina!5e0!3m2!1sen!2sng!4v1700000000000"
+      width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+  <form style="margin-top:1em;">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Umm Zahra Boutique — Katsina, Nigeria</p>
+</footer>
+
+<div class="bottom-nav">
+  <a href="#home">🏠</a>
+  <a href="#shop">🛍️</a>
+  <a href="https://api.whatsapp.com/send?phone=2349017254986">💬</a>
+  <a href="#about">👗</a>
+</div>
+
+</body>
 </html>
